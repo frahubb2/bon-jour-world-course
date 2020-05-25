@@ -1,0 +1,16 @@
+title: bon jour world
+description: Trying to get this training to progress.
+template:
+  repo: bon-jour-world-template
+  name: bon-jour-world
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
